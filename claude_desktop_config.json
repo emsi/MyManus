@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "@automatalabs-mcp-server-playwright": {
+      "runtime": "node",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@automatalabs/mcp-server-playwright"
+      ],
+      "env": {
+        "DISPLAY": ":0"
+      }
+    },
+    "sandbox": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-shell @ git+https://github.com/emsi/mcp-server-shell"
+      ],
+      "env": {
+        "DISPLAY": ":0"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/agent"
+      ]
+    }
+  }
+}
