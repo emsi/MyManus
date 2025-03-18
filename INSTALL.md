@@ -43,6 +43,7 @@ cp claude_desktop_config.json ~/sandboxes/claude-desktop/.config/Claude/
 
 ## Paste the prompt from [here](./prompts/prompt.md)
 Into here:
+
 ![Paste Prompt](./assets/Set_Project_Instructions.png)
 
 If you stumble upon any issues read the next sexion.
@@ -53,10 +54,13 @@ If you stumble upon any issues read the next sexion.
 2. Read the instruction for MCP on Linux https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md
 3. Pay special attentiont to https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#missing-display-variable
 4. Create and enter the sandbox: `./claude_sandbox.sh`
+5. Copy the MCP servers configurtion:
+`cp claude_desktop_config.json ~/sandboxes/claude-desktop/.config/Claude/`
 
-cp claude_desktop_config.json ~/sandboxes/claude-desktop/.config/Claude/
+6. Enter the sanbod: `./claude_sandbox.sh`
+7. While in sandbox run the Claude Desktop: `claude-desktop`
 
-claude-desktop```
+You can run the `claude-desktop` wihtout the sandbox but then MCP servers will have access to your local filesystem.
 
 # USAGE
 
@@ -65,4 +69,4 @@ When starting a new conversation make sure to select the MyManus project:
 ![Select MyManus Project](./assets/MyManus_Use.png)
 
 
-If you want to automatically accept the tool usage then read [this guide](https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#missing-display-variable)
+If you want to automatically accept the tool usage read [this guide](https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#auto-accepting-tools)
