@@ -16,3 +16,6 @@ All that you need is [Claude Desktop](https://github.com/emsi/claude-desktop) ap
 
 # [INSTALLATION](./INSTALL.md)
 To install MyManys follow the [installation guide](./INSTALL.md).
+
+# [USAGE](./USAGE.md)
+To use MyManus follow the [usage guide](./USAGE.md).
