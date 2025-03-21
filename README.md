@@ -19,3 +19,7 @@ To install MyManys follow the [installation guide](./INSTALL.md).
 
 # [USAGE](./USAGE.md)
 To use MyManus follow the [usage guide](./USAGE.md).
+
+# [EXAMPLES](./EXAMPLES.md)
+
+To see MyManus in action check out the [examples](./EXAMPLES.md).
