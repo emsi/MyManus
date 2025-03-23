@@ -19,7 +19,7 @@ Additionaly a special claude_sandbox.sh script will be created to run Claude Des
 ```bash
 wget -O- https://raw.githubusercontent.com/emsi/claude-desktop/refs/heads/main/install-claude-desktop.sh | bash
 
-./claude_sandbox.sh
+./build/claude_sandbox.sh
 
 claude-desktop
 ```
