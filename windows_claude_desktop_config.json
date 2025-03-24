@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "@automatalabs-mcp-server-playwright": {
+      "command": "wsl",
+      "args": [
+	"~/sandboxes/claude_sandbox.sh",
+       	"claude-desktop",
+	"npx",
+        "-y",
+        "@automatalabs/mcp-server-playwright"
+      ],
+      "env": {
+        "DISPLAY": ":0"
+      }
+    },
+    "sandbox": {
+      "command": "wsl",
+      "args": [
+	"~/sandboxes/claude_sandbox.sh",
+       	"claude-desktop",
+	"uvx",
+        "mcp-server-shell @ git+https://github.com/emsi/mcp-server-shell"
+      ],
+      "env": {
+        "DISPLAY": ":0"
+      }
+    },
+    "filesystem": {
+      "command": "wsl",
+      "args": [
+	"~/sandboxes/claude_sandbox.sh",
+       	"claude-desktop",
+	"npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/agent"
+      ]
+    }
+  }
+}

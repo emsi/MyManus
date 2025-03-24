@@ -17,6 +17,9 @@ All that you need is [Claude Desktop](https://github.com/emsi/claude-desktop) ap
 # [INSTALLATION](./INSTALL.md)
 To install MyManus, follow the [installation guide](./INSTALL.md).
 
+# [WINDOWS INSTALLATION](./WINDOWS_INSTALL.md)
+To install MyManus on Windows, follow the [Windows installation guide](./WINDOWS_INSTALL.md).
+
 # [USAGE](./USAGE.md)
 To use MyManus, follow the [usage guide](./USAGE.md).
 

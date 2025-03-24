@@ -1,6 +1,6 @@
 # INSTALLATION
 
-> This guide is Linux only but expect Windows and MacOS installation guides soon.
+> This guide is Linux only. For Windows, follow [WINDOWS INSTALL](./WINDOWS_INSTALL.md). Expect MacOS installation guides soon.
 
 ## Pre-requisites
 
@@ -68,5 +68,7 @@ When starting a new conversation make sure to select the MyManus project:
 
 ![Select MyManus Project](./assets/MyManus_Use.png)
 
+
+# Automatic Tools Acceptance 
 
 If you want to automatically accept the tool usage read [this guide](https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#auto-accepting-tools)
