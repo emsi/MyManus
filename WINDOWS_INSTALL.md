@@ -18,10 +18,9 @@ Go to MS Store and install the latest version of Ubuntu 22.04 LTS.
 
 ## Installation
 
-Claude Desktop is an electron app. By following this guide you will download and install claude-desktop Windows app, repackage it to Linux deb package and install it on your machine.
-Additionaly a special claude_sandbox.sh script will be created to run Claude Desktop in a sandboxed environment. This makes it safer to give the AI access to local filesystem. 
+**Before installation make sure that you have run and closed the Claude Desktop app at least once.**
 
-### Install and Run Claude Desktop
+### Install and Run Claude Sandbox
 Open your Ubuntu 22.04 LTS from Start Menu and run the following commands:
 
 ```bash
