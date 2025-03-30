@@ -51,7 +51,7 @@ If you stumble upon any issues read the next section.
 ## Step by step, manual instructions
 
 1. Read and follow the instruction at https://github.com/emsi/claude-desktop
-2. Read the instruction for MCP on Linux https://githubction/emsi/claude-desktop/blob/main/MCP_LINUX.md
+2. Read the instruction for MCP on Linux https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md
 3. Pay special attentiont to https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#missing-display-variable
 4. Create and enter the sandbox: `./claude_sandbox.sh`
 5. Copy the MCP servers configurtion:
