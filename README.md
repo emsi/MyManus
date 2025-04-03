@@ -1,5 +1,7 @@
-MyManus
-========
+
+<div align="center">
+  <img src="./assets/MyManus.png" alt="MyManus">
+</div>
  
 MyManus is the 100% free, 0% coding, **local**, **secure** agentic environment akin to [Manus AI](https://manus.im/) built entirely around Model Context Protocol [MCP](https://modelcontextprotocol.io/introduction) implementation.
 
