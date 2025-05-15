@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/emsi-mymanus-badge.png)](https://mseep.ai/app/emsi-mymanus)
+
 
 <div align="center">
   <img src="./assets/MyManus.png" alt="MyManus">
