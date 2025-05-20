@@ -12,8 +12,8 @@
 
 ## Installation
 
-Claude Desktop is an electron app. By following this guide you will download and install claude-desktop Windows app, repackage it to Linux deb package and install it on your machine.
-Additionaly a special claude_sandbox.sh script will be created to run Claude Desktop in a sandboxed environment. This makes it safer to give the AI access to local filesystem. 
+Claude Desktop is an electron app. By following this guide you will download and install the claude-desktop Windows app, repackage it to a Linux deb package and install it on your machine.
+Additionally a special claude_sandbox.sh script will be created to run Claude Desktop in a sandboxed environment. This makes it safer to give the AI access to the local filesystem.
 
 ### Install and Run Claude Desktop
 ```bash
@@ -52,15 +52,15 @@ If you stumble upon any issues read the next section.
 
 1. Read and follow the instruction at https://github.com/emsi/claude-desktop
 2. Read the instruction for MCP on Linux https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md
-3. Pay special attentiont to https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#missing-display-variable
+3. Pay special attention to https://github.com/emsi/claude-desktop/blob/main/MCP_LINUX.md#missing-display-variable
 4. Create and enter the sandbox: `./claude_sandbox.sh`
-5. Copy the MCP servers configurtion:
+5. Copy the MCP servers configuration:
 `cp claude_desktop_config.json ~/sandboxes/claude-desktop/.config/Claude/`
 
 6. Enter the sandbox: `./claude_sandbox.sh`
 7. While in sandbox run the Claude Desktop: `claude-desktop`
 
-You can run the `claude-desktop` wihtout the sandbox but then MCP servers will have access to your local filesystem.
+You can run `claude-desktop` without the sandbox, but then MCP servers will have access to your local filesystem.
 
 # USAGE
 
