@@ -198,10 +198,7 @@ Use sheebang and the file header to both call uv and declare dependencies. Hereâ
 #   "pandas",
 #   "typer",
 #   "openai",
-#   "parasoft",
 # ]
-# [tool.uv.sources]
-# parasoft = { path = "../.." }
 # ///
 ```
 
