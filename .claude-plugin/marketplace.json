@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "mymanus",
-      "source": "mymanus-plugin",
+      "source": "./mymanus-plugin",
       "description": "Autonomous agent with planning, execution, and browser automation capabilities"
     }
   ]
