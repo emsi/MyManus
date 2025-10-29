@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "runtime": "node",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@automatalabs/mcp-server-playwright"
+      ]
+    }
+  }
+}

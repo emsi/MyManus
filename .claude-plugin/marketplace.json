@@ -9,7 +9,7 @@
     {
       "name": "mymanus",
       "source": "./mymanus-plugin",
-      "description": "Transform Claude Code into an autonomous agent with MyManus capabilities - planning, reasoning, execution, and evaluation with browser automation support"
+      "description": "Autonomous agent with planning, execution, and browser automation capabilities"
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 name: mymanus
-description: Enable autonomous agent behavior with structured planning, systematic execution, browser automation, and comprehensive research capabilities. Use this skill for complex multi-step tasks requiring independent planning, web research, coding projects, data analysis, or long-form writing. Activates agent loop methodology (Plan → Execute → Observe → Iterate) with TodoWrite tracking, systematic information gathering, and quality validation.
+description: Autonomous agent for complex multi-step tasks with structured planning, execution, and research capabilities
 version: 1.0.0
 ---
 
