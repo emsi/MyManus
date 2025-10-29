@@ -1,0 +1,25 @@
+{
+  "name": "mymanus",
+  "version": "1.0.0",
+  "description": "Autonomous agent with planning, execution, and browser automation capabilities",
+  "author": {
+    "name": "emsi",
+    "url": "https://github.com/emsi/MyManus"
+  },
+  "keywords": [
+    "autonomous",
+    "agent",
+    "research",
+    "automation",
+    "browser",
+    "playwright",
+    "planning",
+    "productivity",
+    "mymanus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emsi/MyManus"
+  },
+  "license": "AGPL-3.0"
+}

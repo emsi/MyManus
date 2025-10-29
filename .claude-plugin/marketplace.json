@@ -1,0 +1,15 @@
+{
+  "name": "mymanus",
+  "owner": {
+    "name": "emsi",
+    "url": "https://github.com/emsi"
+  },
+  "description": "MyManus plugin marketplace - Transform Claude Code into an autonomous agent",
+  "plugins": [
+    {
+      "name": "mymanus",
+      "source": "mymanus-plugin",
+      "description": "Autonomous agent with planning, execution, and browser automation capabilities"
+    }
+  ]
+}
