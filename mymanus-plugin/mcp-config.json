@@ -1,0 +1,90 @@
+{
+  "description": "MCP Server Configuration for MyManus Plugin in Claude Code",
+  "note": "Add these MCP servers to your Claude Code configuration to enable MyManus capabilities",
+  "mcpServers": {
+    "playwright": {
+      "description": "Browser automation for web research and complex interactions",
+      "runtime": "node",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@automatalabs/mcp-server-playwright"
+      ],
+      "env": {
+        "DISPLAY": ":0"
+      },
+      "notes": [
+        "Enables full browser automation capabilities",
+        "Required for complex web interactions (clicking, forms, navigation)",
+        "On Linux/WSL2, ensure DISPLAY variable is set appropriately",
+        "On Windows/macOS, remove the env section or adjust as needed"
+      ],
+      "installation": {
+        "requirements": [
+          "Node.js installed",
+          "npx available"
+        ],
+        "platform_specific": {
+          "linux": "Ensure X server is running and DISPLAY=:0 is set",
+          "wsl2": "Install X server (VcXsrv/X410) and set DISPLAY variable",
+          "macos": "Remove env section or set DISPLAY if using XQuartz",
+          "windows": "Remove env section"
+        }
+      }
+    }
+  },
+  "optional_servers": {
+    "filesystem": {
+      "description": "Sandboxed filesystem access (optional - Claude Code has built-in file tools)",
+      "runtime": "node",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/path/to/sandbox/directory"
+      ],
+      "notes": [
+        "Only needed if you want to restrict Claude Code to a specific directory",
+        "Claude Code already has Read, Write, Edit tools for filesystem operations",
+        "Replace /path/to/sandbox/directory with your desired sandbox path"
+      ]
+    },
+    "shell": {
+      "description": "Sandboxed shell access (optional - Claude Code has built-in Bash tool)",
+      "command": "uvx",
+      "args": [
+        "mcp-server-shell @ git+https://github.com/emsi/mcp-server-shell"
+      ],
+      "notes": [
+        "Only needed if you want sandboxed shell execution",
+        "Claude Code already has a Bash tool for command execution",
+        "Requires Python's uv/uvx to be installed"
+      ]
+    }
+  },
+  "configuration_instructions": {
+    "claude_code_mcp_setup": [
+      "1. Open Claude Code settings/preferences",
+      "2. Navigate to MCP Servers configuration section",
+      "3. Add the 'playwright' server configuration from above",
+      "4. Save and restart Claude Code",
+      "5. Verify the Playwright MCP server appears in available tools"
+    ],
+    "alternative_setup": [
+      "If Claude Code doesn't have MCP UI configuration:",
+      "1. Locate Claude Code's configuration directory",
+      "2. Edit the MCP configuration file (usually in .config/claude-code/)",
+      "3. Add server configurations to the mcpServers section",
+      "4. Save and restart Claude Code"
+    ]
+  },
+  "verification": {
+    "steps": [
+      "1. Start Claude Code",
+      "2. Check available tools/servers in the interface",
+      "3. Look for Playwright-related tools",
+      "4. Test browser automation with a simple command",
+      "5. Verify the browser launches and navigates correctly"
+    ]
+  }
+}
