@@ -1,0 +1,25 @@
+{
+  "name": "mymanus",
+  "version": "1.0.0",
+  "description": "Transform Claude Code into an autonomous agent with MyManus capabilities - planning, reasoning, execution, and evaluation with browser automation support",
+  "author": {
+    "name": "emsi",
+    "url": "https://github.com/emsi/MyManus"
+  },
+  "keywords": [
+    "autonomous",
+    "agent",
+    "research",
+    "automation",
+    "browser",
+    "playwright",
+    "planning",
+    "productivity",
+    "mymanus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emsi/MyManus"
+  },
+  "license": "AGPL-3.0"
+}

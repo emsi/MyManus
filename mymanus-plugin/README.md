@@ -71,42 +71,50 @@ Organized development practices:
 
 1. **Claude Code**: Install from [claude.com/claude-code](https://claude.com/claude-code)
 2. **Node.js**: Required for Playwright MCP server (v18 or later recommended)
-3. **Git**: For cloning this repository
+3. **Git**: For accessing the plugin repository
 
-### Step 1: Clone the Repository
+### Quick Install (Recommended)
+
+The easiest way to install the MyManus plugin is through Claude Code's plugin system:
+
+1. **Add the MyManus marketplace** (one-time setup):
+   ```
+   /plugin marketplace add https://github.com/emsi/MyManus.git
+   ```
+
+2. **Install the plugin**:
+   ```
+   /plugin install mymanus@mymanus
+   ```
+
+3. **Restart Claude Code** to activate the plugin
+
+4. **Verify installation**:
+   ```
+   /help
+   ```
+   The MyManus skill should now be available for Claude to use automatically.
+
+### Manual Install (Alternative)
+
+If you prefer to install manually or for development purposes:
+
+#### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/emsi/MyManus.git
-cd MyManus/mymanus-plugin
 ```
 
-### Step 2: Configure System Prompt
+#### Step 2: Add as Local Plugin
 
-You have two options for adding the system prompt to your Claude Code project:
+In Claude Code, add the local plugin:
 
-#### Option A: Project-Level Configuration (Recommended)
+```
+/plugin marketplace add /path/to/MyManus
+/plugin install mymanus@local
+```
 
-1. Create or open your Claude Code project directory
-2. Create a `.claude/` directory if it doesn't exist:
-   ```bash
-   mkdir -p .claude
-   ```
-3. Copy the system prompt to your project:
-   ```bash
-   cp /path/to/MyManus/mymanus-plugin/system-prompt.md .claude/project-instructions.md
-   ```
-4. Claude Code will automatically load this prompt for the project
-
-#### Option B: Global Configuration
-
-1. Locate your Claude Code configuration directory:
-   - Linux: `~/.config/claude-code/`
-   - macOS: `~/Library/Application Support/claude-code/`
-   - Windows: `%APPDATA%/claude-code/`
-2. Add the system prompt to your global settings
-3. Note: This will apply to all Claude Code sessions
-
-### Step 3: Configure Playwright MCP Server
+#### Step 3: Configure Playwright MCP Server
 
 #### For Linux/macOS:
 
@@ -166,28 +174,41 @@ Windows users typically don't need the DISPLAY environment variable. Use this co
 }
 ```
 
-### Step 4: Restart Claude Code
+### How the MyManus Skill Works
 
-After adding the system prompt and MCP configuration:
-1. Save all settings
-2. Restart Claude Code completely
-3. Verify Playwright MCP tools are available
+The MyManus plugin is implemented as a **Claude Code Skill**, which means:
 
-### Step 5: Verify Installation
+- **Auto-Activation**: Claude automatically invokes the skill when it detects tasks requiring autonomous agent behavior, complex planning, research, or multi-step workflows
+- **Context-Aware**: The skill description helps Claude determine when to use MyManus capabilities
+- **On-Demand Loading**: The skill only loads when needed, keeping your conversations efficient
+- **Seamless Integration**: Works alongside Claude Code's existing features without conflicts
 
-Test the installation with a simple command:
+You don't need to manually activate the skill - Claude will use it when appropriate based on your request.
 
+### Verify Installation
+
+Test the installation with examples that trigger the MyManus skill:
+
+**Test 1: Simple browser automation**
 ```
-Please use the browser to navigate to example.com and tell me what you see.
+Use the browser to navigate to example.com and tell me what you see.
 ```
 
-If Playwright is configured correctly, Claude Code should launch a browser, navigate to the page, and describe the content.
+**Test 2: Research task (triggers autonomous behavior)**
+```
+Research the latest developments in Rust web frameworks and create a comparison table.
+```
+
+Claude should:
+- Automatically create a TodoWrite plan
+- Perform systematic research
+- Provide comprehensive results
 
 ## Usage
 
 ### Basic Usage
 
-Once installed, simply start using Claude Code normally. The MyManus system prompt will guide Claude's behavior to be more autonomous and structured.
+Once installed, simply use Claude Code normally. Claude will automatically invoke the MyManus skill for tasks that benefit from autonomous agent behavior.
 
 **Example simple task:**
 ```
