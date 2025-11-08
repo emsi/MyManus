@@ -22,6 +22,8 @@ Before installing the MyManus plugin, ensure you have:
    ```
 3. **Git**: For accessing the plugin repository
 
+> * Note that claude code can and will assist with installation steps if you run into issues!
+
 ## Installation
 
 ### Step 1: Add the MyManus Marketplace
@@ -64,44 +66,10 @@ Check that the plugin loaded successfully:
 
 You should see `mymanus` in the installed plugins list.
 
-## Linux/WSL2 Additional Setup
-
-If you're on Linux or WSL2, you need to configure the DISPLAY environment variable for browser automation:
-
-### 1. Install X Server
-
-- **Linux**: X server is usually pre-installed with desktop environments
-- **WSL2**: Install [VcXsrv](https://sourceforge.net/projects/vcxsrv/) or X410 on Windows
-
-### 2. Configure DISPLAY Variable
-
-1. Open Claude Code settings/preferences
-2. Navigate to **MCP Servers** section
-3. Locate the `playwright` server (auto-configured by the plugin)
-4. Add the environment variable:
-
-```json
-{
-  "playwright": {
-    "runtime": "node",
-    "command": "npx",
-    "args": ["-y", "@automatalabs/mcp-server-playwright"],
-    "env": {
-      "DISPLAY": ":0"
-    }
-  }
-}
 ```
-
-5. Restart Claude Code
-
-### 3. Test X Server
-
-Verify X server is running:
-
-```bash
-xclock  # Should display a clock window
+/doctor 
 ```
+to verify MCP servers are running correctly.
 
 ## Using the MyManus Skill
 
@@ -197,8 +165,8 @@ When active, the MyManus skill:
 **Solutions**:
 1. Verify installation: `/plugin list` and look for `mymanus`
 2. Check marketplace: `/plugin marketplace list`
-3. Restart Claude Code
-4. Reinstall: `/plugin uninstall mymanus` then `/plugin install mymanus@mymanus`
+3. Check for problems using `/doctor` command
+4. Ask claude for help: "Help me troubleshoot the MyManus plugin installation. My /doctor output shows..."
 
 ### Browser Automation Not Working
 
@@ -207,8 +175,7 @@ When active, the MyManus skill:
 **Solutions**:
 1. Verify Node.js: `node --version` (need v18+)
 2. Check MCP configuration in Claude Code settings
-3. Restart Claude Code after MCP configuration changes
-4. Linux/WSL2: Ensure DISPLAY variable is set and X server is running
+3. Ask claude to test MCP server: "Test the Playwright MCP server configuration."
 
 ### Skill Not Being Used
 
@@ -242,37 +209,6 @@ If you want to manage Playwright MCP manually:
 
 1. Configure Playwright in Claude Code settings before installing the plugin
 2. The plugin's `.mcp.json` won't override existing configuration
-
-### Development and Testing
-
-To test plugin changes during development:
-
-```bash
-# Clone the repository
-git clone https://github.com/emsi/MyManus.git
-cd MyManus
-
-# Add as local marketplace
-/plugin marketplace add /path/to/MyManus
-
-# Install from local source
-/plugin install mymanus@local
-
-# Make changes to mymanus-plugin/skills/mymanus/SKILL.md
-# Then restart Claude Code to reload
-```
-
-## Getting Help
-
-- **Plugin Issues**: [GitHub Issues](https://github.com/emsi/MyManus/issues)
-- **Claude Code Documentation**: [code.claude.com/docs](https://code.claude.com/docs)
-- **MCP Protocol**: [modelcontextprotocol.io](https://modelcontextprotocol.io/)
-
-## Next Steps
-
-- Read the [plugin README](./mymanus-plugin/README.md) for feature details
-- Check out [usage examples](./mymanus-plugin/examples/README.md)
-- Review the [MCP setup guide](./mymanus-plugin/MCP_SETUP.md) for troubleshooting
 
 ---
 
