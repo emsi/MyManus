@@ -15,12 +15,24 @@ RESEARCH, CODING, DATA ANALYSIS, PRODUCTIVITY, LIFE, you name it. Depending on t
 
 All that you need is [Claude Desktop](https://github.com/emsi/claude-desktop) app (or any other [MCP Client](https://modelcontextprotocol.io/clients)) and a bunch of existing [MCP servers](https://modelcontextprotocol.io/examples) to set up your ultimate agentic environment, allowing the AI agent to do all the tasks you can imagine. No need to write a single line of code. No need to purchase additional software (apart from an existing [claude.ai](https://claude.ai/) subscription or LLM API).
 
+---
 
-# [INSTALLATION](./INSTALL.md)
-To install MyManus, follow the [installation guide](./INSTALL.md).
+# Installation Options
 
-# [WINDOWS INSTALLATION](./WINDOWS_INSTALL.md)
-To install MyManus on Windows, follow the [Windows installation guide](./WINDOWS_INSTALL.md).
+## For Claude Code (Recommended)
+
+MyManus is now available as a plugin for [Claude Code](https://claude.com/claude-code), Anthropic's official CLI!
+
+**[→ Claude Code Installation Guide](./INSTALL_CLAUDECODE.md)**
+
+## For Claude Desktop
+
+To install MyManus for Claude Desktop app:
+
+**[→ Installation Guide (Linux/macOS)](./INSTALL.md)**
+**[→ Windows Installation Guide](./WINDOWS_INSTALL.md)**
+
+---
 
 # [USAGE](./USAGE.md)
 To use MyManus, follow the [usage guide](./USAGE.md).
